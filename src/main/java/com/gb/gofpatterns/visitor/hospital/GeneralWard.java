@@ -3,7 +3,14 @@ package com.gb.gofpatterns.visitor.hospital;
 import java.util.List;
 
 public class GeneralWard implements Ward {
-    int floor;
+    public List<Patient> getPatients() {
+        return patients;
+    }
+
+    public void setPatients(List<Patient> patients) {
+        this.patients = patients;
+    }
+
     List<Patient> patients;
 
     @Override

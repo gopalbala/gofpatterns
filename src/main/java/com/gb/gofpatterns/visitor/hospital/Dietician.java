@@ -1,12 +1,22 @@
 package com.gb.gofpatterns.visitor.hospital;
 
 public class Dietician implements WardVisitor {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public void visit(GeneralWard generalWard) {
         for (Patient patient : generalWard.patients) {
             System.out.println("Treated patient " + patient.getName());
             patient.setTreatment("Take proteins and vitamins");
-            System.out.println("Prescribed patient " + patient.getTreatment());
+            System.out.println("Dietician Prescribed General patient " + patient.getTreatment());
         }
     }
 
@@ -15,7 +25,7 @@ public class Dietician implements WardVisitor {
         for (Patient patient : emergencyWard.patients) {
             System.out.println("Treated patient " + patient.getName());
             patient.setTreatment("Take more proteins");
-            System.out.println("Prescribed patient " + patient.getTreatment());
+            System.out.println("Dietician Prescribed Emergency ward patient " + patient.getTreatment());
         }
     }
 
@@ -23,7 +33,7 @@ public class Dietician implements WardVisitor {
     public void visit(IcuWard icuWard) {
         for (Patient patient : icuWard.patients) {
             patient.setTreatment("Take no food");
-            System.out.println("Prescribed patient " + patient.getTreatment());
+            System.out.println("Dietician Prescribed ICU patient " + patient.getTreatment());
         }
     }
 }

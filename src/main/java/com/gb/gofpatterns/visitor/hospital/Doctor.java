@@ -1,7 +1,15 @@
 package com.gb.gofpatterns.visitor.hospital;
 
 public class Doctor implements WardVisitor {
-    String name;
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     @Override
     public void visit(GeneralWard generalWard) {

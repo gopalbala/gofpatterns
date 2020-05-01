@@ -7,6 +7,14 @@ public class Patient {
     private String treatment;
     private LocalDateTime dateOfAdmission;
 
+    public Patient() {
+
+    }
+
+    public Patient(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
