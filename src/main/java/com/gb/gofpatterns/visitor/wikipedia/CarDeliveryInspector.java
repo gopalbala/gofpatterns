@@ -2,17 +2,17 @@ package com.gb.gofpatterns.visitor.wikipedia;
 
 public class CarDeliveryInspector implements CarPartVisitor {
     @Override
-    public String visit(Door door) {
-        return "Inspected door";
+    public void visit(Door door) {
+        System.out.println("Inspected door");
     }
 
     @Override
-    public String visit(Wheel wheel) {
-        return "Inspected wheel";
+    public void visit(Wheel wheel) {
+        System.out.println("Inspected wheel");
     }
 
     @Override
-    public String visit(Engine engine) {
-        return "Inspected engine";
+    public void visit(Engine engine) {
+        System.out.println("Inspected engine");
     }
 }

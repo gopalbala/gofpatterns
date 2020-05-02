@@ -1,9 +1,9 @@
 package com.gb.gofpatterns.visitor.wikipedia;
 
 public interface CarPartVisitor {
-    String visit(Door door);
+    void visit(Door door);
 
-    String visit(Wheel wheel);
+    void visit(Wheel wheel);
 
-    String visit(Engine engine);
+    void visit(Engine engine);
 }
