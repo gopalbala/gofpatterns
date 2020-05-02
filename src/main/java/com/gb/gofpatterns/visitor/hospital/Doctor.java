@@ -24,7 +24,7 @@ public class Doctor implements WardVisitor {
     public void visit(EmergencyWard emergencyWard) {
         for (Patient patient : emergencyWard.patients) {
             System.out.println("Treated patient " + patient.getName());
-            patient.setTreatment("Take med1");
+            patient.setTreatment("Take med1, Take this theraphy");
             System.out.println("Prescribed patient " + patient.getTreatment());
         }
     }
