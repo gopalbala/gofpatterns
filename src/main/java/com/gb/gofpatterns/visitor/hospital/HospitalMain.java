@@ -28,6 +28,8 @@ public class HospitalMain {
         ((IcuWard) icuWaard).setPatients(List.of(icup1, icup2));
 
         Doctor physician = new Doctor();
+        Jainitor jainitor = new Jainitor();
+
         physician.setName("Dr.Ram");
 
         Dietician dietician = new Dietician();
@@ -38,6 +40,11 @@ public class HospitalMain {
         emergencyWard.accept(physician);
         System.out.println("----------------------------");
         generalWard.accept(dietician);
+        System.out.println("----------------------------");
+        generalWard.accept(jainitor);
+        emergencyWard.accept(jainitor);
+        icuWaard.accept(jainitor);
+        System.out.println("----------------------------");
 
     }
 }
