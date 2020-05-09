@@ -3,7 +3,7 @@ package com.gb.gofpatterns.decorator.wikipedia;
 import lombok.ToString;
 
 @ToString
-public abstract class CoffeeDecorator implements Coffee {
+public abstract class CoffeeDecorator extends Coffee {
     private final Coffee decoratedCoffee;
 
     public CoffeeDecorator(Coffee decoratedCoffee) {
@@ -11,13 +11,13 @@ public abstract class CoffeeDecorator implements Coffee {
     }
 
     @Override
-    public double cost() {
-        return decoratedCoffee.cost();
+    public double getCost() {
+        return decoratedCoffee.getCost();
     }
 
     @Override
-    public String ingredients() {
-        return decoratedCoffee.ingredients();
+    public String getIngredients() {
+        return decoratedCoffee.getIngredients();
     }
 
 }

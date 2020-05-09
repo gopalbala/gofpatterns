@@ -6,13 +6,13 @@ public class CreamCoffee extends CoffeeDecorator {
     }
 
     @Override
-    public double cost() {
-        return super.cost() + 2.1D;
+    public double getCost() {
+        return super.getCost() + 2.1D;
     }
 
     @Override
-    public String ingredients() {
-        return super.ingredients() + " Cream";
+    public String getIngredients() {
+        return super.getIngredients() + " Cream";
     }
 
 }

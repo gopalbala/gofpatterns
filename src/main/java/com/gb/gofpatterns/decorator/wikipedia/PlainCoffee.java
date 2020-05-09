@@ -1,17 +1,17 @@
 package com.gb.gofpatterns.decorator.wikipedia;
 
-public class PlainCoffee implements Coffee {
+public class PlainCoffee extends Coffee {
 
     public PlainCoffee() {
     }
 
     @Override
-    public double cost() {
+    public double getCost() {
         return 1.0D;
     }
 
     @Override
-    public String ingredients() {
+    public String getIngredients() {
         return "decoction";
     }
 }

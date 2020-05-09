@@ -7,12 +7,12 @@ public class CoffeeWithMilk extends CoffeeDecorator {
     }
 
     @Override
-    public double cost() {
-        return super.cost();
+    public double getCost() {
+        return super.getCost();
     }
 
     @Override
-    public String ingredients() {
-        return super.ingredients() + " Milk";
+    public String getIngredients() {
+        return super.getIngredients() + " Milk";
     }
 }

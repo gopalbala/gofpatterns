@@ -1,7 +1,7 @@
 package com.gb.gofpatterns.decorator.wikipedia;
 
-public interface Coffee {
-    double cost();
+public abstract class Coffee {
+    abstract double getCost();
 
-    String ingredients();
+    abstract String getIngredients();
 }
