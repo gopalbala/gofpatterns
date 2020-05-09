@@ -1,13 +1,7 @@
 package com.gb.gofpatterns.decorator.wikipedia;
 
-import lombok.Getter;
-import lombok.Setter;
+public interface Coffee {
+    double cost();
 
-import java.util.List;
-
-@Getter
-@Setter
-public abstract class Coffee {
-    private double cost;
-    private List<String> ingredients;
+    String ingredients();
 }
