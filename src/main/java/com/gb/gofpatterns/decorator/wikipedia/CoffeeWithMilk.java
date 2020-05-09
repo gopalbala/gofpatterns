@@ -13,6 +13,6 @@ public class CoffeeWithMilk extends CoffeeDecorator {
 
     @Override
     public String ingredients() {
-        return super.ingredients() + "Milk";
+        return super.ingredients() + " Milk";
     }
 }
