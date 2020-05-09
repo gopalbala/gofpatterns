@@ -1,11 +1,9 @@
 package com.gb.gofpatterns.decorator.vehiclerental;
 
-public abstract class HireDecorator extends HireableVehicle {
+public class AfternoonHireDecorator extends HireDecorator {
 
-    HireableVehicle hireableVehicle;
-
-    public HireDecorator(HireableVehicle hireableVehicle) {
-        this.hireableVehicle = hireableVehicle;
+    public AfternoonHireDecorator(HireableVehicle hireableVehicle) {
+        super(hireableVehicle);
     }
 
     @Override
@@ -25,6 +23,6 @@ public abstract class HireDecorator extends HireableVehicle {
 
     @Override
     public double getPrice() {
-        return hireableVehicle.getPrice();
+        return hireableVehicle.getPrice() * .85;
     }
 }
