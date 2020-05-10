@@ -14,7 +14,4 @@ public abstract class HireableVehicle {
 
     public abstract double getPrice();
 
-//    public abstract String setRegistrationNumber();
-//    public abstract String setMake();
-//    public abstract String setModel();
 }

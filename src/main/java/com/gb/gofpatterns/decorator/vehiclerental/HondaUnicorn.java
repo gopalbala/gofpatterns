@@ -13,7 +13,7 @@ public class HondaUnicorn extends HireableVehicle {
 
     @Override
     public String getModel() {
-        return "Unicorn";
+        return "Unicorn 2019 ABS";
     }
 
     @Override

@@ -13,7 +13,7 @@ public class HondaCity extends HireableVehicle {
 
     @Override
     public String getModel() {
-        return "City";
+        return "City 2020 ZX";
     }
 
     @Override

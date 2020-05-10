@@ -13,6 +13,14 @@ public class VehicleRentalMain {
 
         HireableVehicle hondaCity1 = new
                 PeakSeasonDecorator(new AfternoonHireDecorator(new HondaCity()));
+
+        HireableVehicle hondaUnicorn = new HondaUnicorn();
+        hondaUnicorn = new AfternoonHireDecorator(new WorkingDayDecorator(hondaUnicorn));
+
+
+        System.out.println("Hiring vehicle on working day with price " + hondaUnicorn.getPrice());
+
+
         System.out.println("Peak season hired in afternoon " + hondaCity1.getPrice());
     }
 }
