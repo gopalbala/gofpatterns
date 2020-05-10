@@ -8,7 +8,7 @@ public class CoffeeWithMilk extends CoffeeDecorator {
 
     @Override
     public double getCost() {
-        return super.getCost();
+        return super.getCost() + .75d;
     }
 
     @Override
