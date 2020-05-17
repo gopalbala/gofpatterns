@@ -1,8 +1,5 @@
 package com.gb.gofpatterns.abstractfactory.carspares;
 
-import lombok.Getter;
-
-@Getter
 public class TataHatchbackHandle extends Handle {
 
     public TataHatchbackHandle(Color color) {
