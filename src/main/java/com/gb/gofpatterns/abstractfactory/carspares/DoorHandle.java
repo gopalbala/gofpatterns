@@ -1,12 +1,12 @@
 package com.gb.gofpatterns.abstractfactory.carspares;
 
-public abstract class Handle {
+public abstract class DoorHandle {
     private String productId;
     private Color color;
     private double price;
     private String description;
 
-    public Handle(Color color) {
+    public DoorHandle(Color color) {
         this.color = color;
     }
 

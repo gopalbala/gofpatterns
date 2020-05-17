@@ -1,8 +1,8 @@
 package com.gb.gofpatterns.abstractfactory.carspares;
 
-public class TataHatchbackHandle extends Handle {
+public class TataHatchbackDoorHandle extends DoorHandle {
 
-    public TataHatchbackHandle(Color color) {
+    public TataHatchbackDoorHandle(Color color) {
         super(color);
         this.setColor(color);
         this.setProductId("THBK001");

@@ -1,8 +1,8 @@
 package com.gb.gofpatterns.abstractfactory.carspares;
 
-public class MahindraHatchbackHandle extends Handle {
+public class MahindraHatchbackDoorHandle extends DoorHandle {
 
-    public MahindraHatchbackHandle(Color color) {
+    public MahindraHatchbackDoorHandle(Color color) {
         super(color);
         this.setColor(color);
         this.setProductId("MHBK001");

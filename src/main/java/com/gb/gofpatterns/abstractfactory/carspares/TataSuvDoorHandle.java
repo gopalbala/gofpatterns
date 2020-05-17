@@ -1,7 +1,7 @@
 package com.gb.gofpatterns.abstractfactory.carspares;
 
-public class TataSuvHandle extends Handle {
-    public TataSuvHandle(Color color) {
+public class TataSuvDoorHandle extends DoorHandle {
+    public TataSuvDoorHandle(Color color) {
         super(color);
         this.setColor(color);
         this.setProductId("TSUV001");

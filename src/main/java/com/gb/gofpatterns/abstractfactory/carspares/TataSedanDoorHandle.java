@@ -1,7 +1,7 @@
 package com.gb.gofpatterns.abstractfactory.carspares;
 
-public class TataSedanHandle extends Handle {
-    public TataSedanHandle(Color color) {
+public class TataSedanDoorHandle extends DoorHandle {
+    public TataSedanDoorHandle(Color color) {
         super(color);
         this.setColor(color);
         this.setProductId("TSDN001");

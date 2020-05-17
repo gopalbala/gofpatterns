@@ -2,14 +2,14 @@ package com.gb.gofpatterns.abstractfactory.carspares;
 
 public class TataDoorFactory extends DoorFactory {
     @Override
-    public Handle getHandle(CarType carType, Color color) {
+    public DoorHandle getHandle(CarType carType, Color color) {
         switch (carType) {
             case SUV:
-                return new TataSuvHandle(color);
+                return new TataSuvDoorHandle(color);
             case HATCHBACK:
-                return new TataHatchbackHandle(color);
+                return new TataHatchbackDoorHandle(color);
             case SEDAN:
-                return new TataSedanHandle(color);
+                return new TataSedanDoorHandle(color);
             default:
                 return null;
         }
