@@ -6,6 +6,6 @@ public class TataSuvDoorHandle extends DoorHandle {
         this.setColor(color);
         this.setProductId("TSUV001");
         this.setPrice(1800d);
-        this.setDescription("Tata SUV handle");
+        this.setDescription("Tata SUV handle with color " + color);
     }
 }

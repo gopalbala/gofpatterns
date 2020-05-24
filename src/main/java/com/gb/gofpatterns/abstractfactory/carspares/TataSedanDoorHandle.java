@@ -5,7 +5,7 @@ public class TataSedanDoorHandle extends DoorHandle {
         super(color);
         this.setColor(color);
         this.setProductId("TSDN001");
-        this.setPrice(1400d);
-        this.setDescription("Tata Sedan handle");
+        this.setPrice(1404d);
+        this.setDescription("Tata Sedan handle with color " + color);
     }
 }

@@ -7,6 +7,6 @@ public class TataHatchbackDoorHandle extends DoorHandle {
         this.setColor(color);
         this.setProductId("THBK001");
         this.setPrice(1100d);
-        this.setDescription("Tata Hatchback handle");
+        this.setDescription("Tata Hatchback handle with color " + color);
     }
 }

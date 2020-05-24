@@ -6,7 +6,14 @@ public class CarSparesMain {
         DoorFactory doorFactory = new MahindraDoorFactory();
         DoorHandle doorHandle = doorFactory.getHandle(CarType.SUV, Color.WHITE);
         System.out.println("Delivering Handle " +
-                doorHandle.getDescription() + "with color " + doorHandle.getColor()
+                doorHandle.getDescription()  //"with color " + doorHandle.getColor()
                 + "for customer with price " + doorHandle.getPrice());
+
+        DoorFactory factory = new TataDoorFactory();
+        DoorHandle tataSedanHandle = factory.getHandle(CarType.SEDAN, Color.ORANGE);
+
+        System.out.println("Delivering Handle " +
+                tataSedanHandle.getDescription()  //"with color " + doorHandle.getColor()
+                + "for customer with price " + tataSedanHandle.getPrice());
     }
 }
