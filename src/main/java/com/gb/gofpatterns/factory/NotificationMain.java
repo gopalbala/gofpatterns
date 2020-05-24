@@ -8,15 +8,15 @@ public class NotificationMain {
                 "factory method", "signature",
                 "follower@goprodeveloperbala.com",
                 "sender@goprodeveloperbala.com");
-        Client emaiClient = NotificationFactory.getNotificationclient(ClientType.MAIL);
-        emaiClient.notify(emailNotification);
+        Client emailClient = NotificationFactory.getNotificationclient(ClientType.MAIL);
+        emailClient.notify(emailNotification);
         System.out.println("**********SMS notification**********");
         Notification smsNotificaiton
                 = new Notification("factory method tutorial published",
                 "factory method", "signature",
                 "8881045313",
                 "TM-TUTS");
-        Client smsClient = NotificationFactory.getNotificationclient(ClientType.MAIL);
+        Client smsClient = NotificationFactory.getNotificationclient(ClientType.MESSAGE);
         smsClient.notify(smsNotificaiton);
     }
 }

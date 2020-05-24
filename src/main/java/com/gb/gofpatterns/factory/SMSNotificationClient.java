@@ -8,7 +8,7 @@ public class SMSNotificationClient extends Client {
 
     @Override
     public void notify(Notification notification) {
-        System.out.println("Sending notification from " + notification.getSender());
-        System.out.println("Sending notification to " + notification.getRecipient());
+        System.out.println("Sending SMS notification from " + notification.getSender());
+        System.out.println("Sending SMS notification to " + notification.getRecipient());
     }
 }

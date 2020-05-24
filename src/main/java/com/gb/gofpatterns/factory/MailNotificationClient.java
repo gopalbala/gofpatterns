@@ -8,7 +8,7 @@ public class MailNotificationClient extends Client {
 
     @Override
     public void notify(Notification notification) {
-        System.out.println("Sending notification from " + notification.getSender());
-        System.out.println("Sending notification to " + notification.getRecipient());
+        System.out.println("Sending EMAIL notification from " + notification.getSender());
+        System.out.println("Sending EMAIL notification to " + notification.getRecipient());
     }
 }
