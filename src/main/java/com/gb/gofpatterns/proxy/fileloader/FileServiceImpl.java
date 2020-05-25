@@ -13,7 +13,7 @@ public class FileServiceImpl implements FileService {
     public File getFile(String name) {
         System.out.println("Loading file from disk " + name);
         try {
-            URL res = getClass().getClassLoader().getResource(name);
+            URL res = getClass().getClassLoader().getResource("static/" + name);
             String content = Files.readString(Paths.get(res.toURI()), StandardCharsets.UTF_8);
             File file = new File();
             file.setContent(content);
