@@ -18,7 +18,7 @@ public class FileServiceImpl implements FileService {
             File file = new File();
             file.setContent(content);
             file.setFileName(name);
-            file.setPath("./");
+            file.setPath(file.getPath());
             return file;
         } catch (IOException e) {
             e.printStackTrace();
